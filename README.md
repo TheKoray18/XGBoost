@@ -11,3 +11,11 @@ XGBOOST ;
 
 'Churn_Modelling.csv' veri setini kullanarak XGBoost'un modelimiz üzerinde etkisini görmeye çalıştık.Logistic Regression , Neural Network ile karşılatırma yaptık.
 
+Logistic Regression Accuracy Score = 80.75
+
+Neural Network Accuracy Score = 85.48
+
+XGBoost Accuracy Score = 85.90
+
+
+
