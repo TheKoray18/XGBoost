@@ -28,11 +28,11 @@ data=data.drop(['RowNumber','CustomerId','Surname'],axis=1)
 data=pd.get_dummies(data,columns=['Geography','Gender','HasCrCard','IsActiveMember'],
                     prefix=['Geography','Gender','HasCrCard','IsActiveMember'])
 
-#%% Fueltype sütunun alınması
+#%% Exited sütunun alınması
 
 exited=data.iloc[:,6:7]
 
-#%% Fueltype sütunun datamızdan silinmesi
+#%% Exited sütunun datamızdan silinmesi
 
 data=data.drop(['Exited'],axis=1)
 
