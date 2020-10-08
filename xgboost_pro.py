@@ -62,11 +62,13 @@ log_reg.fit(x_train,y_train)
 
 y_pred=log_reg.predict(x_test)
 
-#%% Confusion Matric 
+#%% Confusion Matrix ve accuracy score
 
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix,accuracy_score
 
 cm=confusion_matrix(y_test, y_pred)
+
+acc_score=accuracy_score(y_test, y_pred)*100
 
 #%% XGBoost 
 
@@ -78,9 +80,11 @@ xgb.fit(x_train,y_train)
 
 xgb_pred=xgb.predict(x_test)
 
-#%% XGBoost Confusion Matrix
+#%% XGBoost Confusion Matrix ve Accuracy score
 
 cm2=confusion_matrix(y_test, xgb_pred)
+
+xgb_acc_score=accuracy_score(y_test, xgb_pred)*100
 
 #%% Sinir Ağı 
 
@@ -106,9 +110,11 @@ hist=model.fit(x_train,y_train,epochs=10,verbose=1)
 nn_pred=model.predict(x_test)
 
 nn_pred=nn_pred > 0.5
-#%% Sinir Ağı Confusion Matrix
+#%% Sinir Ağı Confusion Matrix ve accuracy score 
 
 nn_cm=confusion_matrix(y_test, nn_pred)
+
+nn_acc_score=accuracy_score(y_test, nn_pred)*100
 
 
 #%% Sinir Ağı Seaborn 
