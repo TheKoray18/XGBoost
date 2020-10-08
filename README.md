@@ -5,9 +5,9 @@ XGBOOST ;
 
 - Yüksek Verilerde iyi performans gösterir (Çalışma Performansı)
 
--Hızlı Çalışma 
+- Hızlı Çalışma 
 
--Problem ve Modelin yorumunun mümkün olması
+- Problem ve Modelin yorumunun mümkün olması
 
 'Churn_Modelling.csv' veri setini kullanarak XGBoost'un modelimiz üzerinde etkisini görmeye çalıştık.Logistic Regression , Neural Network ile karşılatırma yaptık.
 
